@@ -6,8 +6,7 @@ import time
 from datetime import datetime, timedelta
 
 
-import os
-TOKEN = os.environ.get("8257362952:AAEWjYMGT2uEnpDjo2EbOxLG8g5Z9RzAyhA")
+TOKEN = '8257362952:AAEWjYMGT2uEnpDjo2EbOxLG8g5Z9RzAyhA'
 bot = telebot.TeleBot(TOKEN)
 
 ROLES_FILE = 'roles.json'
@@ -267,4 +266,5 @@ def broadcast_message(message):
 
 # --- Запуск ---
 bot.infinity_polling()
+
 
